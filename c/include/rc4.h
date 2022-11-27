@@ -1,0 +1,1 @@
+void rc4(unsigned char *key, size_t key_length, unsigned char *plaintext, unsigned char *ciphertext, size_t text_length);
