@@ -2,15 +2,9 @@
 #include <string.h>
 #include <stdlib.h>
 #include "rc4.h"
+#include "tools.h"
 
-void print_hex(const unsigned char *text, long size)
-{
-	for (size_t i = 0, len = size; i < len; i++)
-		printf("0x%02hhx ", text[i]);
-	printf("\n");
-}
-
-int main()
+int simple_test()
 {
 	char *key = "123";
 	char *text = "hello there";
